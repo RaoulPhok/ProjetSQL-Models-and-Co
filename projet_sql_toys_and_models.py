@@ -110,25 +110,6 @@ inner join B on A.Client = B.customerName
 inner join C on B.customerName = C.NomClient2) as tab
 order by FlagImpaye;
 
-# HR : Chaque mois les 2 vendeurs avec le CA le + élevé avec ajout de la marge brute
-select *, (ca - achat) as profits 
-from (
-select * from (
-select 
-		rank() over(partition by date_format(orders.orderDate, "%y/%m") order by sum(orderdetails.quantityOrdered*priceEach) DESC) as top2,
-		employees.firstName, 
-		employees.lastName, 
-        date_format(orders.orderDate, "%y/%m") as mois, 
-        sum(orderdetails.quantityOrdered*priceEach) as ca,
-        round(sum(products.buyPrice*orderdetails.quantityOrdered)) as achat
-from products
-inner join orderdetails on orderdetails.productCode = products.productCode
-inner join orders on orders.orderNumber = orderdetails.orderNumber 
-inner join customers on customers.customerNumber =orders.customerNumber 
-inner join employees on customers.salesRepEmployeeNumber = employees.employeeNumber
-group by employees.firstName, employees.lastName, date_format(orders.orderDate, "%y/%m")) subsub ) subplus
-where top2 in (1,2)
-order by mois desc, ca desc;
 
 # Top 5 des des produits les plus rentables
 select *,(ca - achat) as profits from (
