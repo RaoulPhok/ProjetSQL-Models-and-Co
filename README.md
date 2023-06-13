@@ -1,12 +1,13 @@
-You are commissioned by a company selling models and scale models. 
-The company already has a database that lists employees, products, orders, and much more. You are invited to browse and discover this database. 
-The director of the company wishes to have a dashboard which he could refresh each morning to have the latest information in order to manage the company.
+Contexte de la mission
 
-Objective 
-Your dashboard should revolve around these 4 main topics: sales, finance, logistics, and human resources. 
-Here are the indicators that should be present in your dashboard. Visualizations would also be appreciated. And you are invited to practice your advisory role, by proposing additional KPIs and charts. 
-- Sales: The number of products sold by category and by month, with comparison and rate of change compared to the same month of the previous year. 
-- Finances: The turnover of the orders of the last two months by country / Orders that have not yet been paid. 
-- Logistics: The stock of the 5 most ordered products. 
-- Human Resources: Each month, the 2 sellers with the highest turnover. 
-Nota bene: sometimes business indicators are not technically achievable. It is up to you to explain it, and to bring your own ideas to answer the business needs.
+Vous êtes mandaté par une entreprise qui vend des maquettes et des modèles réduits. 
+L'entreprise dispose déjà d'une base de données qui répertorie les employés, les produits, les commandes et bien d'autres choses encore. Vous êtes invité à parcourir et à découvrir cette base de données. 
+Le directeur de l'entreprise souhaite disposer d'un tableau de bord qu'il pourrait rafraîchir chaque matin pour disposer des dernières informations afin de gérer l'entreprise.
+
+Objectif 
+Votre tableau de bord doit s'articuler autour de ces 4 grands thèmes : les ventes, les finances, la logistique et les ressources humaines. 
+Voici les indicateurs qui doivent être présents dans votre tableau de bord. Des visualisations seraient également appréciées. Et vous êtes invités à exercer votre rôle de conseiller, en proposant des KPI et des graphiques supplémentaires. 
+- Ventes : Le nombre de produits vendus par catégorie et par mois, avec comparaison et taux de variation par rapport au même mois de l'année précédente. 
+- Finances : Chiffre d'affaires des commandes des deux derniers mois par pays / Commandes non encore payées. 
+- Logistique : Le stock des 5 produits les plus commandés. 
+
